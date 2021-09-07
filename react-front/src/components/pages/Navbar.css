@@ -1,0 +1,173 @@
+
+.navbar {
+    /*background: #98dc5c;*/
+    height: 80px;
+    display: flex;
+    padding: 18px 0;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, #e9502a, #ff0000, #d13535, #c93227,#ff580a);
+    animation: 12s myGradient infinite;
+    border-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2 rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+   
+}
+
+
+.fa-search{
+  transition: 1s;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.container{
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+.navbar-logo {
+    color: rgb(255, 255, 255);
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+  }
+  
+  .nav-item {
+    padding-right: 15px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav-item:hover {
+
+  }
+
+  nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1 rem;
+    height: 100%;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+      }
+      .gray {
+        color: rgb(255, 0, 0);
+        background-color: #d2d2d2;
+    }
+      .nav-menu.active {
+        background: rgba(63, 211, 154, 0.815);
+        left: 0;
+        opacity: 1;
+        transition: all 0.s ease;
+        z-index: 1;
+      }
+    
+      .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        color: #fff;
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+      }
+    
+      .nav-item:hover {
+        border: none;
+      }
+    
+      .nav-item {
+        width: 100%;
+      }
+    
+      .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+      }
+      .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    
+      .fa-times {
+        color: #fff;
+        font-size: 2rem;
+      }
+    
+      .nav-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+      }    
+
+}

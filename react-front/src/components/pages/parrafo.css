@@ -120,6 +120,9 @@ h1 {
   .layer1 {
     background-image: url('../../layered-waves-haikei.svg');
   }
+  .layer2 {
+    background-image: url('../../layered-waves-haikei-bottom.svg');
+  }
 
 
   .flip {

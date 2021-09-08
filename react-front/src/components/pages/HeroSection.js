@@ -5,6 +5,8 @@ import {Spinner} from 'reactstrap';
 import axios from 'axios';
 import Load from './Load';
 import Button from './Button';
+
+import './parrafo.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function HeroSection({
     lightBg, topLine, lightText, lightTextDesc, headline, description,
@@ -14,11 +16,13 @@ function HeroSection({
         <>
         <div className={lightBg ? 'home__hero-section' : 'home__hero-sectiondarkBg'}> </div>
 
-         {/* Contenedor de información*/}  
+         {/* Contenedor de información*/} 
+         <div class="spacer layer1 "> 
          <div className="container">
             <div className="row home__hero-row"
             style={{display: 'flex', flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'}}
             >
+                
                 <div className="col">
                     <div className="home__hero-text-wrapper">
                         <div className="top-line">{topLine}</div>
@@ -28,8 +32,11 @@ function HeroSection({
                         </p>
                        
                         
-                               
-                        <Button/>     
+                        
+                        
+                        <Button/> 
+                        
+                            
                                 
                        
                     </div>
@@ -41,6 +48,8 @@ function HeroSection({
                         <img src={img} alt={alt} className='home__hero-img'/>
                     </div>
                 </div>
+                
+            </div>
             </div>
         </div>
         </>

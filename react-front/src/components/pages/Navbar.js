@@ -40,7 +40,7 @@ function Navbar() {
                   
                    <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
                     <RiRecycleFill className='navbar-icon'/>
-                    Bin AI
+                    Bin Ai
                   </Link>
                    
                     

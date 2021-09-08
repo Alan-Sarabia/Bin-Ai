@@ -77,7 +77,7 @@ function App() {
   return (
     <div>
       {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
-      <input
+      <input hidden
         type="file"
         accept="image/*"
         capture="camera"

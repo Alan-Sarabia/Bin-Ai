@@ -75,7 +75,7 @@ function App() {
   const { showImage, showResults } = machine.states[appState];
 
   return (
-    <div>
+    <div  >
       {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
       <input hidden
         type="file"
@@ -93,9 +93,11 @@ function App() {
           ))}
         </ul>
       )}
-      <button onClick={actionButton[appState].action || (() => {})}>
+      
+      <button class="button button--mimas" onClick={actionButton[appState].action || (() => {})}>
         {actionButton[appState].text}
       </button>
+ 
     </div>
   );
 }

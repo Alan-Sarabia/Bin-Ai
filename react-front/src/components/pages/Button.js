@@ -94,8 +94,8 @@ function App() {
         </ul>
       )}
       
-      <button class="button button--mimas" onClick={actionButton[appState].action || (() => {})}>
-        {actionButton[appState].text}
+      <button class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener" onClick={actionButton[appState].action || (() => {})}>
+        {actionButton[appState].text} 
       </button>
  
     </div>

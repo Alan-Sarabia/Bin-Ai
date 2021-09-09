@@ -51,18 +51,7 @@ function Navbar() {
                         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
                             
-                        <li className='nav-item'>
-                                <Link to='/' href="#fakeLink" class="btn gray"onClick={closeMobileMenu}>
-                                   Home
-                                </Link>
-                            </li>
-                            
-
-                            <li className='nav-item'>
-                                <Link to='/Informaciòn' href="#fakeLink" class="btn gray" onClick={closeMobileMenu}>
-                                    Información
-                                </Link>
-                            </li>
+                      
            
                         </ul>
                 </div>

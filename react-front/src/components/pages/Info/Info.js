@@ -5,7 +5,7 @@ import Informacion from './Informacion';
 function Info() {
     return (
         <>
-           <Informacion {...informacionOne}/>
+          
         </>
     );
 }

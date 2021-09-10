@@ -5,9 +5,7 @@ import './parrafo.css';
 function Parrafo() {
     return (
         <div>
-            
-            <div class="spacer layer2 "> </div>
-            
+            <div class="spacer layer2 "> </div> 
         </div>
         
     )

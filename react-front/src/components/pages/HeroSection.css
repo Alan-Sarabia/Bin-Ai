@@ -27,14 +27,15 @@
   
   .home__hero-text-wrapper {
     max-width: 540px;
-    padding-top: 0;
+    padding-top: 20%;
     padding-bottom: 60px;
   }
   
   /*Encabezado superior*/
   .top-line {
     padding-top: 20px;
-    color: #f00946;
+    color: #ffffff;
+    background-color: #f00946;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;

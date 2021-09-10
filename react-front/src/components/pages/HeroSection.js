@@ -30,25 +30,9 @@ function HeroSection({
                         <p className={lightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>
                             {description}
                         </p>
-                       
-                        
-                        
-                        
-                        <Button/> 
-                        
-                            
-                                
-                       
+                        <Button/>        
                     </div>
                 </div>
-
-
-                <div className='col'>
-                    <div className='home__hero-img-wrapper'>
-                        <img src={img} alt={alt} className='home__hero-img'/>
-                    </div>
-                </div>
-                
             </div>
             </div>
         </div>

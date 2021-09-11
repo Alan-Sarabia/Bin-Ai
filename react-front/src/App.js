@@ -15,11 +15,13 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
+        
           <Route path='/' exact component={Home} />
           <Route path='/Informaciòn' exact component={Info} />
         </Switch>
+       
         <Parrafo/> 
-        
+       
       </Router>
     </div>
   );

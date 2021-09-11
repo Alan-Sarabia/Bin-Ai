@@ -1,5 +1,5 @@
 .home__hero-section {
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     padding: 0px;
   }
   
@@ -32,17 +32,7 @@
   }
   
   /*Encabezado superior*/
-  .top-line {
-    padding-top: 20px;
-    color: #ffffff;
-    background-color: #f00946;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-  }
+  
   
   .heading {
     margin-bottom: 24px;

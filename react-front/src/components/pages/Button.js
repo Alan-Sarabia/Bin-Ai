@@ -94,7 +94,7 @@ function App() {
         </ul>
       )}
       
-      <button class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener" onClick={actionButton[appState].action || (() => {})}>
+      <button class="btn effect01" target="_blank"onClick={actionButton[appState].action || (() => {})}>
         {actionButton[appState].text} 
       </button>
  

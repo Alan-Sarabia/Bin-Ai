@@ -2,7 +2,7 @@ import React, { useState, useRef, useReducer } from "react";
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import * as tf from '@tensorflow/tfjs'
 import './Button.css'
-
+import hashmap from "./hashmap";
 
 
 
@@ -15,6 +15,7 @@ const machine = {
     modelReady: { on: { next: "imageReady" } },
     imageReady: { on: { next: "identifying" }, showImage: true },
     identifying: { on: { next: "complete" } },
+    //tips: {on: {next: "complete"}, showImage: true, showResults: true},
     complete: { on: { next: "modelReady" }, showImage: true, showResults: true }
   }
 };
@@ -22,6 +23,7 @@ const machine = {
 function App() {
   tf.setBackend("cpu");
   const [results, setResults] = useState([]);
+  const [tips, setTips] = useState([]);
   const [imageURL, setImageURL] = useState(null);
   const [model, setModel] = useState(null);
   const imageRef = useRef();
@@ -44,6 +46,8 @@ function App() {
     next();
     const results = await model.classify(imageRef.current);
     setResults(results);
+    const tips = hashmap(results[0].className);
+    setTips(tips)
     next();
   };
 
@@ -51,6 +55,11 @@ function App() {
     setResults([]);
     next();
   };
+
+  /*const consejo = async () => {
+    
+    next();
+  };*/
 
   const upload = () => inputRef.current.click();
 
@@ -62,18 +71,24 @@ function App() {
       next();
     }
   };
-
+  
   const actionButton = {
     initial: { action: loadModel, text: "Load Model" },
     loadingModel: { text: "Loading Model..." },
     modelReady: { action: upload, text: "Upload Image" },
     imageReady: { action: identify, text: "Identify Breed" },
     identifying: { text: "Identifying..." },
+    //tips: {action: consejo, text: "tips"},
     complete: { action: reset, text: "Reset" }
   };
 
   const { showImage, showResults } = machine.states[appState];
+//Te dice como reciclar
+    if (typeof results[0] !== 'undefined') {
+      // your code here
 
+    }
+    
   return (
     <div  >
       {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
@@ -93,11 +108,13 @@ function App() {
           ))}
         </ul>
       )}
-      
+      <p>{tips}</p>
       <button class="btn effect01" target="_blank"onClick={actionButton[appState].action || (() => {})}>
         {actionButton[appState].text} 
       </button>
+ <div>
  
+  </div>
     </div>
   );
 }

@@ -26,7 +26,9 @@ collection.set('jay',"No tengo información de como reciclarlo");
 collection.set('magpie',"No tengo información de como reciclarlo");
 collection.set('chickadee',"No tengo información de como reciclarlo");
 collection.set('water ouzel, dipper',"No tengo información de como reciclarlo");
-collection.set('kite',"No tengo información de como reciclarlo");
+collection.set('kite',"Depositar tu papel o cartón en los contenedores habilitados para este producto\".\
+Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero\".\
+");
 collection.set('bald eagle, American eagle, Haliaeetus leucocephalus',"No tengo información de como reciclarlo");
 collection.set('vulture',"No tengo información de como reciclarlo");
 collection.set('great grey owl, great gray owl, Strix nebulosa',"No tengo información de como reciclarlo");
@@ -593,7 +595,7 @@ collection.set( 'hair slide',"No tengo información de como reciclarlo");
 collection.set( 'hair spray',"No tengo información de como reciclarlo");
 collection.set( 'half track',"No tengo información de como reciclarlo");
 collection.set( 'hammer',"No tengo información de como reciclarlo");
-collection.set( 'hamper',"No tengo información de como reciclarlo");
+collection.set( 'hamper',"Dirígete al primer contenedor correspondiente y tira el envase\”.”Será recogido y trasladado a una planta para su previo tratamiento y recuperación\”.”");
 collection.set( 'hand blower, blow dryer, blow drier, hair dryer, hair drier',"No tengo información de como reciclarlo");
 collection.set( 'hand-held computer, hand-held microcomputer',"No tengo información de como reciclarlo");
 collection.set( 'handkerchief, hankie, hanky, hankey',"No tengo información de como reciclarlo");
@@ -1268,7 +1270,7 @@ collection.set( 'electric fan, blower',"No tengo información de como reciclarlo
 collection.set( 'electric guitar',"No tengo información de como reciclarlo");
 collection.set( 'electric locomotive',"No tengo información de como reciclarlo");
 collection.set( 'entertainment center',"No tengo información de como reciclarlo");
-collection.set( 'envelope',"No tengo información de como reciclarlo");
+collection.set( 'envelope',"Depositar tu papel o cartón en los contenedores habilitados para este producto\. Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero\.");
 collection.set( 'espresso maker',"No tengo información de como reciclarlo");
 collection.set( 'face powder',"No tengo información de como reciclarlo");
 collection.set( 'feather boa, boa',"No tengo información de como reciclarlo");

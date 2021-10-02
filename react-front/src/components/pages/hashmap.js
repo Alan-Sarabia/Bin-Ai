@@ -554,7 +554,7 @@ collection.set( 'electric fan, blower',"No tengo información de como reciclarlo
 collection.set( 'electric guitar',"No tengo información de como reciclarlo");
 collection.set( 'electric locomotive',"No tengo información de como reciclarlo");
 collection.set( 'entertainment center',"No tengo información de como reciclarlo");
-collection.set( 'envelope',"No tengo información de como reciclarlo");
+collection.set( 'envelope',"Depositar tu papel o cartón en los contenedores habilitados para este producto\. Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
 collection.set( 'espresso maker',"No tengo información de como reciclarlo");
 collection.set( 'face powder',"No tengo información de como reciclarlo");
 collection.set( 'feather boa, boa',"No tengo información de como reciclarlo");
@@ -760,7 +760,7 @@ collection.set( 'quilt, comforter, comfort, puff',"No tengo información de como
 collection.set( 'racer, race car, racing car',"No tengo información de como reciclarlo");
 collection.set( 'racket, racquet',"No tengo información de como reciclarlo");
 collection.set( 'radiator',"No tengo información de como reciclarlo");
-collection.set( 'radio, wireless',"No tengo información de como reciclarlo");
+collection.set( 'radio, wireless',"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.");
 collection.set( 'radio telescope, radio reflector',"No tengo información de como reciclarlo");
 collection.set( 'rain barrel',"No tengo información de como reciclarlo");
 collection.set( 'recreational vehicle, RV, R.V.',"No tengo información de como reciclarlo");
@@ -889,7 +889,7 @@ collection.set( 'umbrella',"No tengo información de como reciclarlo");
 collection.set( 'unicycle, monocycle',"No tengo información de como reciclarlo");
 collection.set( 'upright, upright piano',"No tengo información de como reciclarlo");
 collection.set( 'vacuum, vacuum cleaner',"No tengo información de como reciclarlo");
-collection.set( 'vase',"No tengo información de como reciclarlo");
+collection.set( 'vase',"La unica forma de reciclarlo es ponerlo en los depositos de basura indicados, y en el caso que el vidrio este sano, se puede reutilizar de distintas formas.");
 collection.set( 'vault',"No tengo información de como reciclarlo");
 collection.set( 'velvet',"No tengo información de como reciclarlo");
 collection.set( 'vending machine',"No tengo información de como reciclarlo");

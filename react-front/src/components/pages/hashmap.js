@@ -761,12 +761,12 @@ collection.set( 'racer, race car, racing car',"No tengo información de como rec
 collection.set( 'racket, racquet',"No tengo información de como reciclarlo");
 collection.set( 'radiator',"No tengo información de como reciclarlo");
 collection.set( 'radio, wireless',"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.");
-collection.set( 'radio telescope, radio reflector',"No tengo información de como reciclarlo");
-collection.set( 'rain barrel',"No tengo información de como reciclarlo");
-collection.set( 'recreational vehicle, RV, R.V.',"No tengo información de como reciclarlo");
-collection.set( 'reel',"No tengo información de como reciclarlo");
+collection.set( 'radio telescope, radio reflector',"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.");
+collection.set( 'rain barrel',"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.");
+collection.set( 'recreational vehicle, RV, R.V.',"Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.");
+collection.set( 'reel',"Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.");
 collection.set( 'reflex camera',"No tengo información de como reciclarlo");
-collection.set( 'refrigerator, icebox',"No tengo información de como reciclarlo");
+collection.set( 'refrigerator, icebox',"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.");
 collection.set( 'remote control, remote',"No tengo información de como reciclarlo");
 collection.set( 'restaurant, eating house, eating place, eatery',"No tengo información de como reciclarlo");
 collection.set( 'revolver, six-gun, six-shooter',"No tengo información de como reciclarlo");

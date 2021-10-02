@@ -52,6 +52,7 @@ function App() {
   };
 
   const reset = async () => {
+    setTips([]);
     setResults([]);
     next();
   };

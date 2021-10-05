@@ -9,7 +9,7 @@ import { IconContext } from 'react-icons/lib'
 //para direccionar
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [button, setButton]= useState(true)
+    const [, setButton]= useState(true)
     const handleCLick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false)
 

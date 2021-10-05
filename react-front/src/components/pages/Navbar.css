@@ -58,25 +58,23 @@
     margin-right: 0.5rem;
   }
   
-  .nav-menu {
-    display: flex;
+  /*.nav-menu {
+    display: flex-end;
     align-items: center;
     justify-content: center;
     list-style: none;
     text-align: center;
     justify-content: end;
-  }
+  }*/
   
   .nav-item {
     padding-right: 15px;
     border-bottom: 2px solid transparent;
   }
   
-  .nav-item:hover {
+  
 
-  }
-
-  nav-links {
+  .nav-links {
     color: #fff;
     display: flex;
     align-items: center;

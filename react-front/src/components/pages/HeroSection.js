@@ -1,13 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './HeroSection.css';
-import {Spinner} from 'reactstrap';
-import axios from 'axios';
-import Load from './Load';
+//import {Spinner} from 'reactstrap';
+//import axios from 'axios';
+//import Load from './Load';
 import Button from './Button';
 
 import './parrafo.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 function HeroSection({
     lightBg, topLine, lightText, lightTextDesc, headline, description,
     buttonLabel, img, alt, imgStart

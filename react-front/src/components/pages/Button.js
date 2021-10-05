@@ -3,7 +3,8 @@ import * as mobilenet from "@tensorflow-models/mobilenet";
 import * as tf from '@tensorflow/tfjs'
 import './Button.css'
 import hashmap from "./hashmap";
-
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -92,6 +93,7 @@ function App() {
     
   return (
     <div  >
+      
       {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
       <input hidden
         type="file"

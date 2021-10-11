@@ -54,19 +54,8 @@
     align-items: center;
   }
   
-  .navbar-icon {
-    margin-right: 0.5rem;
-  }
   
-  /*.nav-menu {
-    display: flex-end;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-    justify-content: end;
-  }*/
-  
+
   .nav-item {
     padding-right: 15px;
     border-bottom: 2px solid transparent;
@@ -145,16 +134,7 @@
         left: 0;
         transform: translate(25%, 50%);
       }
-      .menu-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
-      }
-    
+
       .fa-times {
         color: #fff;
         font-size: 2rem;

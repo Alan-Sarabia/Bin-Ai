@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/pages/homePage/Home'
 import Info from './components/pages/Info/Info';
 import Parrafo from './components/pages/Parrafo';
-import Text from './components/pages/Text';
+import Text from './components/Cards/Text';
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 function App() {

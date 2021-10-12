@@ -1,6 +1,7 @@
 import React from 'react'
 import './Text.css';
 import Card from "./Card";
+import CardTwo from './CardTwo';
 
 
 const card = [
@@ -40,10 +41,13 @@ function Text() {
             <div className="col-md-4" key={id}>
               <Card imageSource={image} title={title} url={url} 
               
+              />  
+              <CardTwo imageSource={image} title={title} url={url} 
+              
               />
             </div>
           ))}
-          
+         
           
         </div>
       </div>

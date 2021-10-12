@@ -75,13 +75,13 @@ function App() {
   };
   
   const actionButton = {
-    initial: { action: loadModel, text: "Load Model" },
-    loadingModel: { text: "Loading Model..." },
-    modelReady: { action: upload, text: "Upload Image" },
-    imageReady: { action: identify, text: "Identify Breed" },
-    identifying: { text: "Identifying..." },
+    initial: { action: loadModel, text: "Cargar modelo" },
+    loadingModel: { text: "Cargando modelo..." },
+    modelReady: { action: upload, text: "Subir imagen" },
+    imageReady: { action: identify, text: "Identificar" },
+    identifying: { text: "Identificando..." },
     //tips: {action: consejo, text: "tips"},
-    complete: { action: reset, text: "Reset" }
+    complete: { action: reset, text: "Resetear" }
   };
 
   const { showImage, showResults } = machine.states[appState];

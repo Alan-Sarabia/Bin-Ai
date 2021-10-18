@@ -7,6 +7,8 @@ import Home from './components/pages/homePage/Home'
 import Info from './components/pages/Info/Info';
 import Parrafo from './components/pages/Parrafo';
 import Text from './components/Cards/Text';
+//import Text from './components/Cards/ThreeCards';
+//import ThreeCards from './components/Cards/ThreeCards';
 <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
 
         </Switch>
         <Text/>
+        {/* <ThreeCards/> */}
         <Parrafo/> 
        
       </Router>

@@ -7,6 +7,8 @@ import r1 from "../img/r1.jpeg";
 import ob2 from '../img/ob2.jpg';
 import desafio3 from '../img/desafio3.jpg'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const card = [
@@ -50,7 +52,7 @@ function Text() {
     return (
       
         <div className="texto">
-        <div className="row">
+        <div className="card-group">
           {card.map(({ title, image, image2, image3, url, id }) => (
             <div className="container" key={id}>
               <Card imageSource={image} title={title} url={url} 

@@ -45,9 +45,9 @@ function App() {
 
   const loadModel = async () => {
     next();
+    history.push("/hola");
     const model = await mobilenet.load();
     setModel(model);
-    history.push("/hola");
     next();
   };
 

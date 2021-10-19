@@ -23,7 +23,7 @@ function CardTwo({ imageSource, title, text, url}) {
               className="btn btn-outline-secondary border-0"
               rel="noreferrer"
             >
-              Mas {title}
+              Mas sobre el tema
             </a>
           </div>
         </div>

@@ -14,15 +14,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const card = [
     {
       id: 1,
-      title: "Informaciòn",
+      title: "Reciclaje",
       image: r1,
       url: "https://es.wikipedia.org/wiki/Reciclaje",
 
       id: 2,
+      title2: "Obsolescencia programada",
       image2: ob2,
       url: "https://es.wikipedia.org/wiki/Obsolescencia_programada",
 
       id: 3,
+      title3: "Desafios ambientales",
       image3: desafio3,
       url: "https://es.mongabay.com/2021/01/desafios-ambientales-argentina-2021-deforestacion-humedales-agronegocios/",
     },
@@ -53,17 +55,17 @@ function Text() {
       
         <div className="texto">
         <div className="card-group">
-          {card.map(({ title, image, image2, image3, url, id }) => (
+          {card.map(({ title, title2, title3, image, image2, image3, url, id }) => (
             <div className="container" key={id}>
               <Card imageSource={image} title={title} url={url} 
               
               />  
              <br/>
-              <CardThree imageSource={image3} title={title} url={url} 
+              <CardThree imageSource={image3} title={title3} url={url} 
               
               />
               <br/>
-              <CardTwo imageSource={image2} title={title} url={url} 
+              <CardTwo imageSource={image2} title={title2} url={url} 
               
               />
               

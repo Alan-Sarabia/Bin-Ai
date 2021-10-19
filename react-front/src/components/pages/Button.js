@@ -3,8 +3,11 @@ import * as mobilenet from "@tensorflow-models/mobilenet";
 import * as tf from '@tensorflow/tfjs'
 import './Button.css'
 import hashmap from "./hashmap";
+import { useHistory } from "react-router-dom";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 
@@ -22,7 +25,10 @@ const machine = {
 };
 
 function App() {
+  
+  
   tf.setBackend("cpu");
+  const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
   const [imageURL, setImageURL] = useState(null);
@@ -35,11 +41,13 @@ function App() {
 
   const [appState, dispatch] = useReducer(reducer, machine.initial);
   const next = () => dispatch("next");
+  
 
   const loadModel = async () => {
     next();
     const model = await mobilenet.load();
     setModel(model);
+    history.push("/hola");
     next();
   };
 

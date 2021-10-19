@@ -1008,6 +1008,8 @@ collection.set( 'ear, spike, capitulum',"No tengo información de como reciclarl
 collection.set( 'toilet tissue, toilet paper, bathroom tissue',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero."); 
 
 const tips=collection.get(props)
+
+
 return(tips)
 }
 

@@ -12,9 +12,7 @@ function Card({ imageSource, title, text, url }) {
       <div className="card-body text-light">
         <h4 className="card-title">{title}</h4>
         <p className="card-text text-secondary">
-          {text
-            ? text
-            : "El reciclaje es un proceso cuyo objetivo es convertir residuos en nuevos productos o en materia prima para su posterior utilización. Se previene el desuso de materiales potencialmente útiles, se reduce el consumo de nueva materia prima y el uso de energía, se previene la contaminación del aire (a través de la incineración) y del agua (a través de los vertederos), así como también se disminuyen las emisiones de gases de efecto invernadero en comparación con la producción de plásticos. "}
+          {text}
         </p>
         <a
           href={url ? url : "#!"}

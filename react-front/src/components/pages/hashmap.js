@@ -755,7 +755,7 @@ collection.set( 'projector',"No tengo información de como reciclarlo");
 collection.set( 'puck, hockey puck',"No tengo información de como reciclarlo");
 collection.set( 'punching bag, punch bag, punching ball, punchball',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
 collection.set( 'purse',"No tengo información de como reciclarlo");
-collection.set( 'quill, quill pen',"No tengo información de como reciclarlo");
+collection.set( 'quill, quill pen',"metal");
 collection.set( 'quilt, comforter, comfort, puff',"No tengo información de como reciclarlo");
 collection.set( 'racer, race car, racing car',"No tengo información de como reciclarlo");
 collection.set( 'racket, racquet',"No tengo información de como reciclarlo");
@@ -1007,10 +1007,12 @@ collection.set( 'bolete',"No tengo información de como reciclarlo");
 collection.set( 'ear, spike, capitulum',"No tengo información de como reciclarlo");
 collection.set( 'toilet tissue, toilet paper, bathroom tissue',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero."); 
 
+const Recycling = new Map();
+Recycling.set('metal', 3)
 const tips=collection.get(props)
+const card = Recycling.get(tips)
 
-
-return(tips)
+return(card)
 }
 
 

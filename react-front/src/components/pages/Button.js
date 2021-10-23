@@ -4,6 +4,7 @@ import * as tf from '@tensorflow/tfjs'
 import './Button.css'
 import hashmap from "./hashmap";
 import { useHistory } from "react-router-dom";
+import Card from "../Cards/Card";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,6 +32,7 @@ function App() {
   const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
+  const [card, setCard] = useState([]);
   const [imageURL, setImageURL] = useState(null);
   const [model, setModel] = useState(null);
   const imageRef = useRef();
@@ -56,7 +58,9 @@ function App() {
     const results = await model.classify(imageRef.current);
     setResults(results);
     const tips = hashmap(results[0].className);
+    const card = Card({title: "hola", text: "hjasdkhjashdjkahdjahdjkahsdhakjsdhakjsdhjakshdkajhdjkahdkjahsdkkjahkdjhaskjdhakjsdhakjsdhakjdhaksdjhakjdhajkdhajkhkashdkal"})
     setTips(tips)
+    setCard(card)
     next();
   };
 
@@ -119,13 +123,13 @@ function App() {
           ))}
         </ul>
       )}
-      <p>{tips}</p>
+      
+      <p>{tips}
+      {card}</p>
       <button class="btn effect01" target="_blank"onClick={actionButton[appState].action || (() => {})}>
         {actionButton[appState].text} 
       </button>
- <div>
- 
-  </div>
+
     </div>
   );
 }

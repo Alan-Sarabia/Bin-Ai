@@ -58,7 +58,7 @@ function App() {
     const results = await model.classify(imageRef.current);
     setResults(results);
     const tips = hashmap(results[0].className);
-    const card = Card({title: "hola", text: "hjasdkhjashdjkahdjahdjkahsdhakjsdhakjsdhjakshdkajhdjkahdkjahsdkkjahkdjhaskjdhakjsdhakjsdhakjdhaksdjhakjdhajkdhajkhkashdkal"})
+    const card = Card({imageSource:"../r1.jpeg"});
     setTips(tips)
     setCard(card)
     next();

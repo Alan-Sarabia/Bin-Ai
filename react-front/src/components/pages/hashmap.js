@@ -517,7 +517,7 @@ collection.set( 'computer keyboard, keypad',"No tengo información de como recic
 collection.set( 'confectionery, confectionary, candy store',"No tengo información de como reciclarlo");
 collection.set( 'container ship, containership, container vessel',"No tengo información de como reciclarlo");
 collection.set( 'convertible',"No tengo información de como reciclarlo");
-collection.set( 'corkscrew, bottle screw',"No tengo información de como reciclarlo");
+collection.set( 'corkscrew, bottle screw',"metal");
 collection.set( 'cornet, horn, trumpet, trump',"No tengo información de como reciclarlo");
 collection.set( 'cowboy boot',"No tengo información de como reciclarlo");
 collection.set( 'cowboy hat, ten-gallon hat',"No tengo información de como reciclarlo");
@@ -1008,7 +1008,7 @@ collection.set( 'ear, spike, capitulum',"No tengo información de como reciclarl
 collection.set( 'toilet tissue, toilet paper, bathroom tissue',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero."); 
 
 const Recycling = new Map();
-Recycling.set('metal', 3)
+Recycling.set('metal', {imageSource:"../img/r1.jpeg", title:"papa", text:"papa", url:"papa" })
 const tips=collection.get(props)
 const card = Recycling.get(tips)
 

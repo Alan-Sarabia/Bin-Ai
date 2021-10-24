@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import r1 from "../img/r1.jpeg";
 import ob2 from '../img/ob2.jpg';
 import desafio3 from '../img/desafio3.jpg'
+import metal from '../img/metal.jpeg'
 
 
 
@@ -60,7 +61,7 @@ function App() {
     const results = await model.classify(imageRef.current);
     setResults(results);
     const tips = hashmap(results[0].className);
-    const card = Card({imageSource:ob2});
+    const card = Card({imageSource:metal, title: "Reciclaje de Metales", text:"El proceso de reciclado empieza cuando el usuario separa sus residuos. Luego, se recogen y clasifican los distintos metales, para procesarlos por separado. Las latas de aluminio y acero se comprimen para llevarlas a la planta de reciclado correspondiente. Luego, se trituran y un imán separa el acero del aluminio.", url:"https://www.serviciodedesguace.com/#Quehacemos"});
     setTips(tips)
     setCard(card)
     next();

@@ -8,7 +8,9 @@ import Card from "../Cards/Card";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import r1 from "../img/r1.jpeg";
+import ob2 from '../img/ob2.jpg';
+import desafio3 from '../img/desafio3.jpg'
 
 
 
@@ -58,7 +60,7 @@ function App() {
     const results = await model.classify(imageRef.current);
     setResults(results);
     const tips = hashmap(results[0].className);
-    const card = Card({imageSource:"../r1.jpeg"});
+    const card = Card({imageSource:ob2});
     setTips(tips)
     setCard(card)
     next();

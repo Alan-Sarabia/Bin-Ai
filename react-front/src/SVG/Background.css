@@ -1,0 +1,136 @@
+
+h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+  }
+
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+  }
+
+  .green2 {
+    background: #3ad03b;
+  }
+
+  .green {
+    background: #14ab00;
+  }
+
+  .pink {
+    background: #ff0066;
+    overflow: hidden;
+  }
+
+  .dark {
+    background: #031b2d;
+  }
+
+  /* Curved bg with plain CSS */
+
+  .curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+  }
+
+  .curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+  }
+
+  /* Bubble bg with plain CSS */
+
+  .bubble::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #0f0f10;
+    height: 85%;
+  }
+
+  /* Curved bg with SVG via https://www.shapedivider.app/ */
+
+  .wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave svg {
+    position: relative;
+    display: block;
+    width: calc(103% + 1.3px);
+    height: 262px;
+  }
+
+  .wave .shape-fill {
+    fill: hsl(240, 3%, 6%);
+  }
+  /* SVG background image via https://haikei.app/ */
+
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .layer1 {
+    background-image: url('./Background.svg');
+    position: relative;
+    top: -500;
+  }
+  .layer2 {
+    background-image: url('./Footer.svg');
+    position: relative;
+    top: -500;
+  }
+ 
+
+  .flip {
+    transform: rotate(180deg);
+  }
+
+ 

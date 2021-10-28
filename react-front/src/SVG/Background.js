@@ -24,10 +24,7 @@ function Background() {
     <section class="bubble">
      
       
-    </section>
     
-    <section class="dark">
-     
     </section>
 
     

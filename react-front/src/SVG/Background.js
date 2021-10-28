@@ -1,6 +1,7 @@
 import React from 'react'
 import './Background.css';
 //import b from './b.svg';
+import Button from '../Button/Button';
 
 function Background() {
     

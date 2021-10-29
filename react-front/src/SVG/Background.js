@@ -1,7 +1,7 @@
 import React from 'react'
 import './Background.css';
 //import b from './b.svg';
-import Button from '../Button/Button';
+//import Button from '../Button/Button';
 
 function Background() {
     
@@ -13,13 +13,15 @@ function Background() {
     
     <section>
       <h1>Eco IA</h1>
+      <h3>Carga el modelo</h3>
       <p></p>
     </section>
 
     <section class="bubble">
-    <br/>
-    <h1>Cargar el modelo</h1>
+    
+   
     {/*boton */}
+    {/*<Button/>*/}
     </section>
     <section class="bubble">
      

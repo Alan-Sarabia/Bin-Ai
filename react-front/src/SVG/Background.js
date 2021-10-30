@@ -1,7 +1,7 @@
 import React from 'react'
 import './Background.css';
 //import b from './b.svg';
-//import Button from '../Button/Button';
+import Button from '../Button/Button';
 
 function Background() {
     
@@ -21,7 +21,7 @@ function Background() {
     
    
     {/*boton */}
-    {/*<Button/>*/}
+    <Button/>
     </section>
     <section class="bubble">
      

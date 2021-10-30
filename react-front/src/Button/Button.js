@@ -1,7 +1,17 @@
-/*
-//error no solucionado
-import React, {useState, useRef, useReducer} from 'react'
-import * as mobilenet from "@tensorflow-models/mobilenet";
+import React, { useState, useRef, useReducer } from "react";
+import * as tf from '@tensorflow/tfjs' ;
+import './Button.css'
+import hashmap from "./hashmap";
+import { useHistory } from "react-router-dom";
+//import Card from "../Cards/Card";
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+
+/*import r1 from "../img/r1.jpeg";
+import ob2 from '../img/ob2.jpg';
+import desafio3 from '../img/desafio3.jpg'
+import metal from '../img/metal.jpeg'*/
+
 
 
 const machine = {
@@ -17,8 +27,10 @@ const machine = {
   }
 };
 
-function Button () {
-  tf.setBackend('cpu');
+function Button() {
+  
+  var mobilenet;
+  tf.setBackend("cpu");
   const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
@@ -47,7 +59,7 @@ function Button () {
     next();
     const results = await model.classify(imageRef.current);
     setResults(results);
-    //const tips = hashmap(results[0].className);
+    const tips = hashmap(results[0].className);
     //const card = Card({imageSource:metal, title: "Reciclaje de Metales", text:"El proceso de reciclado empieza cuando el usuario separa sus residuos. Luego, se recogen y clasifican los distintos metales, para procesarlos por separado. Las latas de aluminio y acero se comprimen para llevarlas a la planta de reciclado correspondiente. Luego, se trituran y un imán separa el acero del aluminio.", url:"https://www.serviciodedesguace.com/#Quehacemos"});
     setTips(tips)
     setCard(card)
@@ -63,9 +75,8 @@ function Button () {
   /*const consejo = async () => {
     
     next();
-  };
-*/
-/*
+  };*/
+
   const upload = () => inputRef.current.click();
 
   const handleUpload = event => {
@@ -93,36 +104,36 @@ function Button () {
       // your code here
 
     }
-    return (
-      <div  >
-        
-        {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
-        <input hidden
-          type="file"
-          accept="image/*"
-          capture="camera"
-          onChange={handleUpload}
-          ref={inputRef}
-        />
-        {showResults && (
-          <ul>
-            {results.map(({ className, probability }) => (
-              <li key={className}>{`${className}: %${(probability * 100).toFixed(
-                2
-              )}`}</li>
-            ))}
-          </ul>
-        )}
-        
-        <p>{tips}
-        {card}</p>
-        <button class="btn effect01" target="_blank"onClick={actionButton[appState].action || (() => {})}>
-          {actionButton[appState].text} 
-        </button>
-  
-      </div>
-    );
+    
+  return (
+    <div  >
+      
+      {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
+      <input hidden
+        type="file"
+        accept="image/*"
+        capture="camera"
+        onChange={handleUpload}
+        ref={inputRef}
+      />
+      {showResults && (
+        <ul>
+          {results.map(({ className, probability }) => (
+            <li key={className}>{`${className}: %${(probability * 100).toFixed(
+              2
+            )}`}</li>
+          ))}
+        </ul>
+      )}
+      
+      <p>{tips}
+      {card}</p>
+      <button class="btn effect01" target="_blank"onClick={actionButton[appState].action || (() => {})}>
+        {actionButton[appState].text} 
+      </button>
+
+    </div>
+  );
 }
 
-export default Button
-*/
+export default Button;

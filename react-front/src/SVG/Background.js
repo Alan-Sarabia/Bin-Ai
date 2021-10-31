@@ -7,35 +7,16 @@ function Background() {
     
     return (
         <div >
-            <div class="spacer layer1" > 
-           
-          
-    
-    <section>
-      <h1>Eco IA</h1>
-      <h3>Carga el modelo</h3>
-      <p></p>
-    </section>
+            <div class="spacer layer1" >
 
-    <section class="bubble">
-    
-   
-    {/*boton */}
-    <Button/>
-    </section>
-    <section class="bubble">
-     
-      
-    
-    </section>
+             <section>
+                    <h3>Carga el modelo</h3><br/>
+                    <Button/>
+             </section>
 
-    
-
-                <div class="spacer layer2" > 
-                
-    
-                </div>
             </div>
+
+            <div class="spacer layer2" > </div>
         </div> 
     )
 }

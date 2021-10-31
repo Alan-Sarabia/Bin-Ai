@@ -1,5 +1,6 @@
 import React, { useState, useRef, useReducer } from "react";
 import * as tf from '@tensorflow/tfjs' ;
+import * as mobilenet from "@tensorflow-models/mobilenet";
 import './Button.css'
 import hashmap from "./hashmap";
 import { useHistory } from "react-router-dom";
@@ -29,7 +30,7 @@ const machine = {
 
 function Button() {
   
-  var mobilenet;
+
   tf.setBackend("cpu");
   const history = useHistory();
   const [results, setResults] = useState([]);
@@ -47,9 +48,9 @@ function Button() {
   const next = () => dispatch("next");
   
 
-  const loadModel = async () => {
+   const loadModel = async () => {
     next();
-    history.push("/hola");
+    /* history.push("/hola");*/
     const model = await mobilenet.load();
     setModel(model);
     next();
@@ -62,7 +63,7 @@ function Button() {
     const tips = hashmap(results[0].className);
     //const card = Card({imageSource:metal, title: "Reciclaje de Metales", text:"El proceso de reciclado empieza cuando el usuario separa sus residuos. Luego, se recogen y clasifican los distintos metales, para procesarlos por separado. Las latas de aluminio y acero se comprimen para llevarlas a la planta de reciclado correspondiente. Luego, se trituran y un imán separa el acero del aluminio.", url:"https://www.serviciodedesguace.com/#Quehacemos"});
     setTips(tips)
-    setCard(card)
+   // setCard(card)
     next();
   };
 

@@ -3,7 +3,7 @@ import * as tf from '@tensorflow/tfjs' ;
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import './Button.css'
 import hashmap from "./hashmap";
-import { useHistory } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
 //import Card from "../Cards/Card";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,7 +32,7 @@ function Button() {
   
 
   tf.setBackend("cpu");
-  const history = useHistory();
+  //const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
   const [card, setCard] = useState([]);
@@ -50,7 +50,7 @@ function Button() {
 
    const loadModel = async () => {
     next();
-    /* history.push("/hola");*/
+    //history.push("/hola");
     const model = await mobilenet.load();
     setModel(model);
     next();

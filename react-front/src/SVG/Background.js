@@ -2,6 +2,9 @@ import React from 'react'
 import './Background.css';
 //import b from './b.svg';
 import Button from '../Button/Button';
+//import Card from '../Cards/Cards';
+import Text from '../Cards/Text';
+
 
 function Background() {
     
@@ -12,6 +15,7 @@ function Background() {
              <section>
                     <h3>Carga el modelo</h3><br/>
                     <Button/>
+                    <Text/>
              </section>
 
             </div>

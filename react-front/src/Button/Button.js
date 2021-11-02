@@ -23,7 +23,6 @@ const machine = {
     modelReady: { on: { next: "imageReady" } },
     imageReady: { on: { next: "identifying" }, showImage: true },
     identifying: { on: { next: "complete" } },
-    //tips: {on: {next: "complete"}, showImage: true, showResults: true},
     complete: { on: { next: "modelReady" }, showImage: true, showResults: true }
   }
 };

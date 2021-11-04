@@ -24,9 +24,7 @@ img{
     font-size: 1rem;
   }
   
-  .overflow {
-    overflow: hidden;
-  }
+ 
   
   .card-img-top {
     transform: scale(1);

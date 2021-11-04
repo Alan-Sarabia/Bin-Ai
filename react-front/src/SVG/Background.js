@@ -10,15 +10,16 @@ function Background() {
     
     return (
         <div >
-            <div class="spacer layer1" >
+            <div className="spacer layer1" >
 
              <section>
-                    <h3>Carga el modelo</h3><br/>
+                    
                    
                     
              </section>
              <div className="button-css"
              > 
+             <h3>Carga el modelo</h3><br/>
              <Button/>
              </div> 
              <br/>

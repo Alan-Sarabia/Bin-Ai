@@ -1,10 +1,10 @@
 .texto{
-    background-color: #001321;
-    display: grid;
-    grid-row-start: 1;
+    background-color: transparent;
+    /*display: grid;
+    grid-row-start: 2;
   
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-       
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+   
 }
 img{
     height: 200px;

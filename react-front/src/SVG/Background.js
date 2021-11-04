@@ -14,9 +14,15 @@ function Background() {
 
              <section>
                     <h3>Carga el modelo</h3><br/>
-                    {/*<Button/>*/}
-                    <Text/>
+                   
+                    
              </section>
+             <div className="button-css"
+             > 
+             <Button/>
+             </div> 
+             <br/>
+             <Text/>
 
             </div>
 

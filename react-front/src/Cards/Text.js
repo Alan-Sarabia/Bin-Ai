@@ -56,6 +56,7 @@ function Text() {
         <div className="card-group">
           {card.map(({ title, title2, title3, image, image2, image3, url, url2, url3, id , text, text2, text3}) => (
             <div className="container" key={id}>
+              
               <Card imageSource={image} title={title} url={url} text={text}
               
               />  

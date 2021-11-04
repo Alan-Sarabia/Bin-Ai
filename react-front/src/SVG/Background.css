@@ -112,7 +112,7 @@
   }
 
   .layer1 {
-    background-image: url('./Background.svg');
+    background-image: url('./Bg.svg');
     position: relative;
     top: -500;
   }

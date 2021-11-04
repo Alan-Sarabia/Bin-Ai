@@ -48,7 +48,7 @@ function Footer() {
                             <Link
                                 className='social-icon-link'
                                 to={
-                                    '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
+                                    'https://www.youtube.com/watch?v=Tu1RZaFnkKs'
                                 }
                                 target='_blank'
                                 aria-label='Youtube'

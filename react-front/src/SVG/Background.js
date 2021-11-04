@@ -24,10 +24,10 @@ function Background() {
              </div> 
              <br/>
              <Text/>
-
+             <div class="spacer layer2" > </div>
             </div>
 
-            <div class="spacer layer2" > </div>
+            
         </div> 
     )
 }

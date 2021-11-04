@@ -128,7 +128,7 @@ function Button() {
       
       <p>{tips}
       {card}</p>
-      <button class="btn effect01" target="_blank"onClick={actionButton[appState].action || (() => {})}>
+      <button class="ba effect01"  target="_blank"onClick={actionButton[appState].action || (() => {})}>
         {actionButton[appState].text} 
       </button>
 

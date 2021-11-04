@@ -4,7 +4,7 @@ import Card from "./Card";
 import r1 from "../img/r1.jpeg";
 import ob2 from '../img/ob2.jpg';
 import desafio3 from '../img/desafio3.jpg'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const card = [

@@ -25,7 +25,7 @@
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 45px;
-	max-width: 160px;
+	max-width: 30%;
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -46,7 +46,7 @@
 	transition: all 0.3s ease-in-out;
   }
   .effect01:hover {
-	border: 4px solid rgb(255, 255, 255);
+	border: 1fr solid rgb(255, 255, 255);
 	background-color: #FFF;
 	box-shadow:0px 0px 0px 4px #EEE inset;
   }
@@ -54,7 +54,7 @@
   /*btn_text*/
   .effect01 span {
 	transition: all 0.2s ease-out;
-	z-index: 2;
+	z-index: 0;
   }
   .effect01:hover span{
 	letter-spacing: 0.13em;

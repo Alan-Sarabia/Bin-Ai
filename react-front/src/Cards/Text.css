@@ -1,14 +1,19 @@
 .texto{
     background-color: #001321;
+    display: grid;
+    grid-row-start: 1;
+  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+       
 }
 img{
     height: 200px;
     width: 140px;
 }
-.card:hover {
+/*.card:hover {
     box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
     transition: all 0.7s linear;
-  }
+  }*/
   
   .card-body {
     padding: 2rem 0 !important;
@@ -28,6 +33,6 @@ img{
     transition: all 0.2s ease-in-out;
   }
   
-  .card-img-top:hover {
+  /*.card-img-top:hover {
     transform: scale(1.8);
-  }
+  }*/

@@ -1,7 +1,7 @@
+import Card from "../Cards/Card"
 
 
-
-function hashmap(props) {
+function hashmap(props, image) {
 
     const collection = new Map();
     //Comienzo del hashmap
@@ -1007,12 +1007,12 @@ function hashmap(props) {
     collection.set( 'ear, spike, capitulum',"No tengo información de como reciclarlo");
     collection.set( 'toilet tissue, toilet paper, bathroom tissue',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero."); 
     
-  //  const Recycling = new Map();
-   // Recycling.set('metal', {imageSource:"../img/r1.jpeg", title:"papa", text:"papa", url:"papa" })
+    const Recycling = new Map();
+    Recycling.set('metal', Card({imageSource:image, title:"papa", text:"papa", url:"papa" }))
     const tips=collection.get(props)
-   // const card = Recycling.get(tips)
+    const card = Recycling.get(tips)
     
-    return(tips)
+    return(card)
     }
     
     

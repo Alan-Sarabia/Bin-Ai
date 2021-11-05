@@ -59,7 +59,7 @@ function Button() {
     next();
     const results = await model.classify(imageRef.current);
     setResults(results);
-    const tips = hashmap(results[0].className);
+    const tips = hashmap(results[0].className, imageURL);
     //const card = Card({imageSource:metal, title: "Reciclaje de Metales", text:"El proceso de reciclado empieza cuando el usuario separa sus residuos. Luego, se recogen y clasifican los distintos metales, para procesarlos por separado. Las latas de aluminio y acero se comprimen para llevarlas a la planta de reciclado correspondiente. Luego, se trituran y un imán separa el acero del aluminio.", url:"https://www.serviciodedesguace.com/#Quehacemos"});
     setTips(tips)
    // setCard(card)

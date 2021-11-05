@@ -495,7 +495,7 @@ function hashmap(props, image) {
     collection.set( 'cellular telephone, cellular phone, cellphone, cell, mobile phone',"No tengo información de como reciclarlo");
     collection.set( 'chain',"No tengo información de como reciclarlo");
     collection.set( 'chainlink fence',"No tengo información de como reciclarlo");
-    collection.set( 'chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour',"No tengo información de como reciclarlo");
+    collection.set( 'chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour',"Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.");
     collection.set( 'chain saw, chainsaw',"No tengo información de como reciclarlo");
     collection.set( 'chest',"No tengo información de como reciclarlo");
     collection.set( 'chiffonier, commode',"No tengo información de como reciclarlo");
@@ -554,7 +554,7 @@ function hashmap(props, image) {
     collection.set( 'electric guitar',"No tengo información de como reciclarlo");
     collection.set( 'electric locomotive',"No tengo información de como reciclarlo");
     collection.set( 'entertainment center',"No tengo información de como reciclarlo");
-    collection.set( 'envelope',"Depositar tu papel o cartón en los contenedores habilitados para este producto. Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
+    collection.set( 'envelope',"papel");
     collection.set( 'espresso maker',"No tengo información de como reciclarlo");
     collection.set( 'face powder',"No tengo información de como reciclarlo");
     collection.set( 'feather boa, boa',"No tengo información de como reciclarlo");
@@ -705,7 +705,7 @@ function hashmap(props, image) {
     collection.set( 'pajama, pyjama, pj\'s, jammies',"No tengo información de como reciclarlo");
     collection.set( 'palace',"No tengo información de como reciclarlo");
     collection.set( 'panpipe, pandean pipe, syrinx',"No tengo información de como reciclarlo");
-    collection.set( 'paper towel',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
+    collection.set( 'paper towel',"papel");
     collection.set( 'parachute, chute',"No tengo información de como reciclarlo");
     collection.set( 'parallel bars, bars',"No tengo información de como reciclarlo");
     collection.set( 'park bench',"No tengo información de como reciclarlo");
@@ -729,7 +729,7 @@ function hashmap(props, image) {
     collection.set( 'pill bottle',"Dirígete al primer contenedor correspondiente y tira el envase. Será recogido y trasladado a una planta para su previo tratamiento y recuperación.");
     collection.set( 'pillow',"No tengo información de como reciclarlo");
     collection.set( 'ping-pong ball',"No tengo información de como reciclarlo");
-    collection.set( 'pinwheel',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
+    collection.set( 'pinwheel',"papel");
     collection.set( 'pirate, pirate ship',"No tengo información de como reciclarlo");
     collection.set( 'pitcher, ewer',"No tengo información de como reciclarlo");
     collection.set( 'plane, carpenter\'s plane, woodworking plane',"No tengo información de como reciclarlo");
@@ -753,7 +753,7 @@ function hashmap(props, image) {
     collection.set( 'projectile, missile',"No tengo información de como reciclarlo");
     collection.set( 'projector',"No tengo información de como reciclarlo");
     collection.set( 'puck, hockey puck',"No tengo información de como reciclarlo");
-    collection.set( 'punching bag, punch bag, punching ball, punchball',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
+    collection.set( 'punching bag, punch bag, punching ball, punchball',"papel");
     collection.set( 'purse',"No tengo información de como reciclarlo");
     collection.set( 'quill, quill pen',"metal");
     collection.set( 'quilt, comforter, comfort, puff',"No tengo información de como reciclarlo");
@@ -923,11 +923,11 @@ function hashmap(props, image) {
     collection.set( 'yawl',"No tengo información de como reciclarlo");
     collection.set( 'yurt',"No tengo información de como reciclarlo");
     collection.set( 'web site, website, internet site, site',"No tengo información de como reciclarlo");
-    collection.set( 'comic book',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
+    collection.set( 'comic book',"papel");
     collection.set( 'crossword puzzle, crossword',"No tengo información de como reciclarlo");
     collection.set( 'street sign',"No tengo información de como reciclarlo");
     collection.set( 'traffic light, traffic signal, stoplight',"No tengo información de como reciclarlo");
-    collection.set( 'book jacket, dust cover, dust jacket, dust wrapper',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.");
+    collection.set( 'book jacket, dust cover, dust jacket, dust wrapper',"papel");
     collection.set( 'menu',"No tengo información de como reciclarlo");
     collection.set( 'plate',"No tengo información de como reciclarlo");
     collection.set( 'guacamole',"No tengo información de como reciclarlo");
@@ -1005,14 +1005,30 @@ function hashmap(props, image) {
     collection.set( 'hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa',"No tengo información de como reciclarlo");
     collection.set( 'bolete',"No tengo información de como reciclarlo");
     collection.set( 'ear, spike, capitulum',"No tengo información de como reciclarlo");
-    collection.set( 'toilet tissue, toilet paper, bathroom tissue',"Depositar tu papel o cartón en los contenedores habilitados para este producto.Posteriormente este producto se envía a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero."); 
+    collection.set( 'toilet tissue, toilet paper, bathroom tissue',"papel"); 
     
+
+
+    //const card = collection.get('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image,  text:collection.get(props), url:"papa" }))
+
+
     const Recycling = new Map();
-    Recycling.set('metal', Card({imageSource:image, title:"papa", text:"papa", url:"papa" }))
+    //const results = await model.classify(imageRef.current);
+    
+    Recycling.set('papel', Card({imageSource:image, title:"papel", text:"ADIVINA COMO HACE ESTE VIEJO HIJO DE PUTA A COJER SIN VIAGRA", url:"papa" }))
+    Recycling.set('metal', Card({imageSource:image, title:"big chungus", text:"", url:"papa" }))
+    Recycling.set('Vidrio', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
+    Recycling.set('Electronicos', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
+    Recycling.set('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
+    Recycling.set('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
     const tips=collection.get(props)
     const card = Recycling.get(tips)
     
-    return(card)
+    return(
+       card
+        
+        
+        )
     }
     
     

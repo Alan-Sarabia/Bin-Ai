@@ -34,7 +34,7 @@ function Button() {
   //const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
-  const [card, setCard] = useState([]);
+ // const [card, setCard] = useState([]);
   const [imageURL, setImageURL] = useState(null);
   const [model, setModel] = useState(null);
   const imageRef = useRef();
@@ -127,7 +127,7 @@ function Button() {
       )}
       
       <p>{tips}
-      {card}</p>
+      </p>
       <button class="ba effect01"  target="_blank"onClick={actionButton[appState].action || (() => {})}>
         {actionButton[appState].text} 
       </button>

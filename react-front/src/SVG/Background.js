@@ -11,23 +11,16 @@ function Background() {
     return (
         <div >
             <div className="spacer layer1" >
-
-             <section>
-                    
-                   
-                    
-             </section>
-             <div className="button-css"
-             > 
-             <h3>Carga el modelo</h3><br/>
-             <Button/>
-             </div> 
-             <br/>
-             <Text/>
+            
+         
+            <br/>
+            <br/>  <br/>  <br/>
+            <h3>Carga el modelo</h3><br/>
+            <Button/>
+            <br/>
+            <Text/>
              <div class="spacer layer2" > </div>
             </div>
-
-            
         </div> 
     )
 }

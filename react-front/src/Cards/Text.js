@@ -19,8 +19,7 @@ const card = [
     title2: "Obsolescencia programada",
     image2: ob2,
     url2: "https://es.wikipedia.org/wiki/Obsolescencia_programada",
-    text2: "La obsolescencia programada u obsolescencia planificada es la determinación o programación del fin de la vida útil de un producto, de modo que, tras un período de tiempo calculado de antemano por el fabricante o por la empresa durante la fase de diseño del mismo, éste se torne obsoleto, no funcional, inútil o inservible por diversos procedimientos, por ejemplo por falta de repuestos, induciendo a los consumidores a la compra de un nuevo producto que lo sustituya​. Su función es generar mayores ingresos debido a compras más frecuentes, que redundan en beneficios económicos continuos por periodos de tiempo más largos para empresas o fabricantes.  ",
-
+    text2: "La obsolescencia programada u obsolescencia planificada es la determinación o programación del fin de la vida útil de un producto, de modo que, tras un período de tiempo calculado de antemano por el fabricante o por la empresa durante la fase de diseño del mismo, éste se torne obsoleto, no funcional, inútil o inservible por diversos procedimientos, por ejemplo por falta de repuestos, induciendo a los consumidores a la compra de un nuevo producto que lo sustituya​. ",
     id: 3,
     title3: "Desafios ambientales",
     image3: desafio3,

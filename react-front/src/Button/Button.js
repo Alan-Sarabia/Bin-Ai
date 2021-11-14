@@ -90,7 +90,7 @@ function Button() {
 
   const actionButton = {
     initial: { action: loadModel, text: "Cargar modelo" },
-    loadingModel: { text: "Cargando modelo..." },
+    loadingModel: { text: "Cargando..." },
     modelReady: { action: upload, text: "Subir imagen" },
     imageReady: { action: identify, text: "Identificar" },
     identifying: { text: "Identificando..." },
@@ -139,7 +139,7 @@ function Button() {
           </div>
         </div>
       </div>
-      <button class="ba effect01" target="_blank" onClick={actionButton[appState].action || (() => { })}>
+      <button class="ba effect01 " target="_blank" onClick={actionButton[appState].action || (() => { })}>
         {actionButton[appState].text}
       </button>
     </div>

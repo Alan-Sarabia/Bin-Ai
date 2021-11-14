@@ -1020,7 +1020,7 @@ function hashmap(props, image) {
     Recycling.set('vidrio', Card({imageSource:image, title:"vidrio", text:"La unica forma de reciclarlo es ponerlo en los depositos de basura indicados, y en el caso que el vidrio este sano, se puede reutilizar de distintas formas.", url:"https://www.dondereciclo.org.ar/como-reciclo/vidrio" }))
     Recycling.set('electronico', Card({imageSource:image, title:"electronicos", text:"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.", url:"https://www.dondereciclo.org.ar/como-reciclo/electronicos" }))
     Recycling.set('plastico', Card({imageSource:image, title:"plastico", text:"Dirígete al primer contenedor correspondiente y tira el envase. Será recogido y trasladado a una planta para su previo tratamiento y recuperación.", url:"https://www.dondereciclo.org.ar/como-reciclo/plastico" }))
-    Recycling.set('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
+    //Recycling.set('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
     const tips=collection.get(props)
     const card = Recycling.get(tips)
     

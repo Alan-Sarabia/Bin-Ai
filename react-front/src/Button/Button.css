@@ -1,6 +1,6 @@
 
   
-  
+
   .ba {
 	letter-spacing: 0.1em;
 	cursor: pointer;
@@ -12,6 +12,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 100%;
+;
   }
   .ba {
 	text-decoration: none;
@@ -29,6 +30,9 @@
 	font-size: 35px;
 	border:rgb(255, 255, 255);
 	height: 50px;
+	font-size: 3vw;
+	border-radius: 3px;
+	white-space: normal
   }
   .effect01:hover {
 	border:  solid rgb(255, 255, 255);
@@ -69,7 +73,25 @@
 	background: #FFF;
 	border: 20px solid #000;
 	opacity: 0;
-	left: 120%;
+	left: 50%;
 	-webkit-transform: rotate(40deg);
 			transform: rotate(40deg);
   }
+    
+
+ .card-body {
+    padding: 2rem 0 !important;
+  }
+  
+  .card-text {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+  }
+  
+ 
+  
+  .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+

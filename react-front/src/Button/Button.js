@@ -1,5 +1,5 @@
 import React, { useState, useRef, useReducer } from "react";
-import * as tf from '@tensorflow/tfjs' ;
+import * as tf from '@tensorflow/tfjs';
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import './Button.css'
 import hashmap from "./hashmap";
@@ -28,13 +28,13 @@ const machine = {
 };
 
 function Button() {
-  
+
 
   tf.setBackend("cpu");
   //const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
- // const [card, setCard] = useState([]);
+  // const [card, setCard] = useState([]);
   const [imageURL, setImageURL] = useState(null);
   const [model, setModel] = useState(null);
   const imageRef = useRef();
@@ -45,9 +45,9 @@ function Button() {
 
   const [appState, dispatch] = useReducer(reducer, machine.initial);
   const next = () => dispatch("next");
-  
 
-   const loadModel = async () => {
+
+  const loadModel = async () => {
     next();
     //history.push("/hola");
     const model = await mobilenet.load();
@@ -62,7 +62,7 @@ function Button() {
     const tips = hashmap(results[0].className, imageURL);
     //const card = Card({imageSource:metal, title: "Reciclaje de Metales", text:"El proceso de reciclado empieza cuando el usuario separa sus residuos. Luego, se recogen y clasifican los distintos metales, para procesarlos por separado. Las latas de aluminio y acero se comprimen para llevarlas a la planta de reciclado correspondiente. Luego, se trituran y un imán separa el acero del aluminio.", url:"https://www.serviciodedesguace.com/#Quehacemos"});
     setTips(tips)
-   // setCard(card)
+    // setCard(card)
     next();
   };
 
@@ -87,7 +87,7 @@ function Button() {
       next();
     }
   };
-  
+
   const actionButton = {
     initial: { action: loadModel, text: "Cargar modelo" },
     loadingModel: { text: "Cargando modelo..." },
@@ -99,15 +99,15 @@ function Button() {
   };
 
   const { showImage, showResults } = machine.states[appState];
-//Te dice como reciclar
-    if (typeof results[0] !== 'undefined') {
-      // your code here
+  //Te dice como reciclar
+  if (typeof results[0] !== 'undefined') {
+    // your code here
 
-    }
-    
+  }
+
   return (
     <div  >
-      
+
       {showImage && <img src={imageURL} alt="upload-preview" ref={imageRef} />}
       <input hidden
         type="file"
@@ -125,13 +125,23 @@ function Button() {
           ))}
         </ul>
       )}
-      
-      <p>{tips}
-      </p>
-      <button class="ba effect01"  target="_blank"onClick={actionButton[appState].action || (() => {})}>
-        {actionButton[appState].text} 
-      </button>
 
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4 "> 
+          </div>
+          
+          <div className="col-md-4 "> 
+            {tips} <br/>
+          </div>
+
+          <div className="col-md-4 "> 
+          </div>
+        </div>
+      </div>
+      <button class="ba effect01" target="_blank" onClick={actionButton[appState].action || (() => { })}>
+        {actionButton[appState].text}
+      </button>
     </div>
   );
 }

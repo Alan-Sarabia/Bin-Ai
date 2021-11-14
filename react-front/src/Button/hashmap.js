@@ -696,7 +696,7 @@ function hashmap(props, image) {
     collection.set( 'oscilloscope, scope, cathode-ray oscilloscope, CRO',"No tengo información de como reciclarlo");
     collection.set( 'overskirt',"No tengo información de como reciclarlo");
     collection.set( 'oxcart',"No tengo información de como reciclarlo");
-    collection.set( 'oxygen mask',"No tengo información de como reciclarlo");
+    collection.set( 'oxygen mask',"plastico");
     collection.set( 'packet',"No tengo información de como reciclarlo");
     collection.set( 'paddle, boat paddle',"No tengo información de como reciclarlo");
     collection.set( 'paddlewheel, paddle wheel',"No tengo información de como reciclarlo");
@@ -734,7 +734,7 @@ function hashmap(props, image) {
     collection.set( 'pitcher, ewer',"No tengo información de como reciclarlo");
     collection.set( 'plane, carpenter\'s plane, woodworking plane',"No tengo información de como reciclarlo");
     collection.set( 'planetarium',"No tengo información de como reciclarlo");
-    collection.set( 'plastic bag',"No tengo información de como reciclarlo");
+    collection.set( 'plastic bag',"plastico");
     collection.set( 'plate rack',"No tengo información de como reciclarlo");
     collection.set( 'plow, plough',"No tengo información de como reciclarlo");
     collection.set( 'plunger, plumber\'s helper',"No tengo información de como reciclarlo");

@@ -495,7 +495,7 @@ function hashmap(props, image) {
     collection.set( 'cellular telephone, cellular phone, cellphone, cell, mobile phone',"No tengo información de como reciclarlo");
     collection.set( 'chain',"No tengo información de como reciclarlo");
     collection.set( 'chainlink fence',"No tengo información de como reciclarlo");
-    collection.set( 'chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour',"Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.");
+    collection.set( 'chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour',"metal");
     collection.set( 'chain saw, chainsaw',"No tengo información de como reciclarlo");
     collection.set( 'chest',"No tengo información de como reciclarlo");
     collection.set( 'chiffonier, commode',"No tengo información de como reciclarlo");
@@ -556,7 +556,7 @@ function hashmap(props, image) {
     collection.set( 'entertainment center',"No tengo información de como reciclarlo");
     collection.set( 'envelope',"papel");
     collection.set( 'espresso maker',"No tengo información de como reciclarlo");
-    collection.set( 'face powder',"No tengo información de como reciclarlo");
+    collection.set( 'face powder',"pilas");
     collection.set( 'feather boa, boa',"No tengo información de como reciclarlo");
     collection.set( 'file, file cabinet, filing cabinet',"No tengo información de como reciclarlo");
     collection.set( 'fireboat',"No tengo información de como reciclarlo");
@@ -1014,14 +1014,14 @@ function hashmap(props, image) {
 
     const Recycling = new Map();
     //const results = await model.classify(imageRef.current);
-    
+    Recycling.set('pilas', Card({imageSource:image, title:"pilas", text:"Las pilas son un material toxico, por favor llevelas a un lugar adecuado", url:"https://www.dondereciclo.org.ar/como-reciclo/pilas" }))
     Recycling.set('papel', Card({imageSource:image, title:"papel", text:"Depositar tu papel o cartón en los contenedores habilitados para este producto. Posteriormente este producto se envia a reciclar en un proceso que resulta mucho menos contaminante que la producción de papel desde cero.", url:"https://www.dondereciclo.org.ar/como-reciclo/carton-y-papel" }))
     Recycling.set('metal', Card({imageSource:image, title:"metal", text:"Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.", url:"https://www.dondereciclo.org.ar/como-reciclo/metales" }))
     Recycling.set('vidrio', Card({imageSource:image, title:"vidrio", text:"La unica forma de reciclarlo es ponerlo en los depositos de basura indicados, y en el caso que el vidrio este sano, se puede reutilizar de distintas formas.", url:"https://www.dondereciclo.org.ar/como-reciclo/vidrio" }))
     Recycling.set('electronico', Card({imageSource:image, title:"electronicos", text:"Para este tipo de productos, es importante llevarselo a mano de obra calificada, preparada para desechar los múltiples tipos de productos toxicos en un electronico.", url:"https://www.dondereciclo.org.ar/como-reciclo/electronicos" }))
     Recycling.set('plastico', Card({imageSource:image, title:"plastico", text:"Dirígete al primer contenedor correspondiente y tira el envase. Será recogido y trasladado a una planta para su previo tratamiento y recuperación.", url:"https://www.dondereciclo.org.ar/como-reciclo/plastico" }))
     Recycling.set('No tengo información de como reciclarlo', Card({imageSource:image, title:"No tengo información de como reciclarlo", text:"" }))
-    //Recycling.set('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
+    Recycling.set('Dirígete al contenedor correcto y deposita el metal en cuestión, o llevaselo a un chatarrero de confianza, especializado en recuperar metales de distintas piezas, dependiendo si son utiles o no.', Card({imageSource:image, title:"papa", text:"", url:"papa" }))
    
     const tips=collection.get(props)
     const card = Recycling.get(tips)

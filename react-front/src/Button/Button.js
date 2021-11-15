@@ -3,7 +3,7 @@ import * as tf from '@tensorflow/tfjs';
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import './Button.css'
 import hashmap from "./hashmap";
-//import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 //import Card from "../Cards/Card";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +23,7 @@ const machine = {
     modelReady: { on: { next: "imageReady" } },
     imageReady: { on: { next: "identifying" }, showImage: true },
     identifying: { on: { next: "complete" } },
-    complete: { on: { next: "modelReady" }, showImage: true, showResults: true }
+    complete: { on: { next: "modelReady" } }
   }
 };
 
@@ -31,7 +31,7 @@ function Button() {
 
 
   tf.setBackend("cpu");
-  //const history = useHistory();
+  const history = useHistory();
   const [results, setResults] = useState([]);
   const [tips, setTips] = useState([]);
   // const [card, setCard] = useState([]);
@@ -49,7 +49,6 @@ function Button() {
 
   const loadModel = async () => {
     next();
-    //history.push("/hola");
     const model = await mobilenet.load();
     setModel(model);
     next();
@@ -62,6 +61,7 @@ function Button() {
     const tips = hashmap(results[0].className, imageURL);
     //const card = Card({imageSource:metal, title: "Reciclaje de Metales", text:"El proceso de reciclado empieza cuando el usuario separa sus residuos. Luego, se recogen y clasifican los distintos metales, para procesarlos por separado. Las latas de aluminio y acero se comprimen para llevarlas a la planta de reciclado correspondiente. Luego, se trituran y un imán separa el acero del aluminio.", url:"https://www.serviciodedesguace.com/#Quehacemos"});
     setTips(tips)
+    history.push("/hola");
     // setCard(card)
     next();
   };

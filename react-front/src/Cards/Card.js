@@ -6,6 +6,9 @@ import "./Card.css";
 
 function Card({ imageSource, title, text, url }) {
   return (
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 d-flex align-items-stretch"></div>
     <div className="card text-center bg-dark animate__animated animate__fadeInUp">
       <div className="overflow">
         <img src={imageSource} alt="Reciclaje" className="card-img-top" />
@@ -25,6 +28,9 @@ function Card({ imageSource, title, text, url }) {
         </a>
       </div>
     </div>
+    </div>
+    </div>
+  
   );
 }
 

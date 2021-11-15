@@ -9,22 +9,28 @@
     padding: 2rem 0 !important;
     /*background-color: #001321;*/
     position: relative;
+    box-sizing: border-box
 
   }
   
     .card-text {
     padding: 0.3rem 1rem;
     font-size: 1rem;
+    box-sizing: border-box
 
   }
   
   .overflow {
     overflow: hidden;
+    box-sizing: border-box
+
   }
   
   .card-img-top {
     transform: scale(1);
     transition: all 0.2s ease-in-out;
+    box-sizing: border-box
+
   }
   
   /*.card-img-top:hover {
